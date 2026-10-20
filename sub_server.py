@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # sub_server.py - 手机订阅服务 (替代 sub_server.ps1)
 # 实时读盘 sub.yaml，监听 0.0.0.0:9099（所有网卡都听，换 IP 也能应答）。
-# 手机 URL：与电脑同一 WiFi 下填 http://HP-ABC:9099/sub.yaml（或 sub_server 启动时提示的当前 IP）
+# 手机 URL：与电脑同一 WiFi 下填 http://<你的电脑主机名>:9099/sub.yaml（或 sub_server 启动时提示的当前 IP）
 import http.server
 import socketserver
 import os
@@ -77,6 +77,7 @@ if __name__ == "__main__":
             print("本机局域网地址（手机填其中与你同网段的那个）:")
             for ip in ips:
                 print(f"   http://{ip}:{PORT}/sub.yaml")
+            print(f"   或主机名形式: http://{socket.gethostname()}:{PORT}/sub.yaml")
         else:
             print("未能探测到局域网地址，请手动确认电脑 IP。")
         try:

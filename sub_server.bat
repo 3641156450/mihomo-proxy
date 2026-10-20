@@ -10,8 +10,8 @@ if %errorlevel% neq 0 (
 )
 
 echo 正在启动订阅服务 (Python 版，常驻 9099)...
-set "PY=C:\Users\36411\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
+set "PY=%USERPROFILE%\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
 if not exist "%PY%" ( for %%P in (py python python3) do ( %%~P --version >nul 2>&1 && set "PY=%%~P" ) )
 start "" /min "%PY%" sub_server.py
-echo 订阅服务已启动，手机填 http://HP-ABC:9099/sub.yaml （须与电脑同一 WiFi；换网络以启动时提示的地址为准）
+echo 订阅服务已启动，手机填 http://<你的电脑主机名>:9099/sub.yaml （须与电脑同一 WiFi；换网络以启动时提示的地址为准）
 pause

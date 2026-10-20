@@ -12,8 +12,8 @@ echo.
 
 :: ---------- 1) 定位 Python（优先用本机配好的 venv）----------
 set "PY="
-if exist "C:\Users\36411\.workbuddy\binaries\python\envs\default\Scripts\python.exe" (
-    set "PY=C:\Users\36411\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
+if exist "%USERPROFILE%\.workbuddy\binaries\python\envs\default\Scripts\python.exe" (
+    set "PY=%USERPROFILE%\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
 ) else (
     for %%P in (py python python3) do ( %%~P --version >nul 2>&1 && ( set "PY=%%~P" & goto :havepy ) )
 )
@@ -58,7 +58,7 @@ echo   代理地址 : 127.0.0.1:%PROXY_PORT%
 echo   换节点   : 双击 dashboard.url 打开面板
 echo   关闭代理 : 运行 stop.bat
 echo   测试谷歌 : 运行 test-google.bat
-echo   手机订阅 : 手机填 http://HP-ABC:9099/sub.yaml （手机须与电脑同一 WiFi；若换了网络，以 sub_server 启动时提示的当前地址为准）
+echo   手机订阅 : 手机填 http://<你的电脑主机名>:9099/sub.yaml （手机须与电脑同一 WiFi；若换了网络，以 sub_server 启动时提示的当前地址为准）
 echo ============================================================
 start "" dashboard.url
 echo.
