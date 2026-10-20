@@ -1,0 +1,167 @@
+mixed-port: 7890
+mode: rule
+
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+proxies:
+  - name: "🇯🇵 日本 | JPN 2"
+    type: "trojan"
+    server: "45.32.52.173"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇺🇸_US_美国"
+    type: "vmess"
+    server: "guanwang.awsno.com"
+    port: 443
+    uuid: "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "guanwang.awsno.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "guanwang.awsno.com"
+  - name: "🇯🇵 日本 | JPN_2"
+    type: "vless"
+    server: "freev2.cloudflare.182682.xyz"
+    port: 443
+    uuid: "ed6ae8d0-0ad4-4828-8fee-621a650abb39"
+    network: "ws"
+    tls: true
+    servername: "jp-osa.862400.xyz"
+    ws-opts:
+      path: "/announcement?ed=2048"
+      headers:
+        Host: "jp-osa.862400.xyz"
+  - name: "🇽🇽 XX · Vless · 718ms | 297"
+    type: "vless"
+    server: "200.165.231.209"
+    port: 443
+    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
+    network: "ws"
+    tls: true
+    servername: "wstg.datasynctrue.online"
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "wstg.datasynctrue.online"
+  - name: "🇯🇵JP-45.32.52.173-28"
+    type: "trojan"
+    server: "45.32.52.173"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇫🇷 法国 | FRA"
+    type: "vless"
+    server: "redrocketnode-bidarbash.sbs"
+    port: 443
+    uuid: "2bdcf0ac-f84e-471f-98dc-a1807acab1cb"
+    network: "ws"
+    tls: true
+    servername: "redrocketnode-bidarbash.sbs"
+    ws-opts:
+      path: "/zoodi"
+      headers:
+        Host: "redrocketnode-bidarbash.sbs"
+  - name: "🇳🇱 NL · Haarlem · Vless · 98ms | 037"
+    type: "vless"
+    server: "188.114.97.6"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    network: "ws"
+    tls: true
+    servername: "lucasjow.us.ci"
+    ws-opts:
+      path: "/?Telegram---V2ray_confiig?ed"
+      headers:
+        Host: "lucasjow.us.ci"
+  - name: "🇭🇰_HK_中国香港->🇺🇸_US_美国"
+    type: "vmess"
+    server: "v4.hdacd.com"
+    port: 30804
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    tls: false
+    skip-cert-verify: true
+  - name: "🇸🇬SG-139.180.146.200-31"
+    type: "trojan"
+    server: "139.180.146.200"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇸🇬[www.v2nodes.com] trojan-SG-..."
+    type: "trojan"
+    server: "139.180.146.200"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206"
+    type: "vmess"
+    server: "turknew.net-flowa.com"
+    port: 80
+    uuid: "cd96479e-9c39-4a7f-ba0c-806a83af19ca"
+    alterId: 0
+    cipher: "auto"
+    network: "http"
+  - name: "🇯🇵JP_1|1.2MB/s"
+    type: "trojan"
+    server: "45.32.52.173"
+    port: 8886
+    network: "tcp"
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇭🇰_HK_中国香港->🇯🇵_JP_日本"
+    type: "vmess"
+    server: "v6.hdacd.com"
+    port: 30806
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    tls: false
+    skip-cert-verify: true
+  - name: "🇺🇸_US_美国_2_2"
+    type: "vmess"
+    server: "www.shopify.com"
+    port: 443
+    uuid: "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "guanwang.awsno.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "guanwang.awsno.com"
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies: ["AUTO", "DIRECT", "🇭🇰_HK_中国香港->🇺🇸_US_美国", "🇯🇵 日本 | JPN 2", "🇺🇸_US_美国", "🇯🇵 日本 | JPN_2", "🇽🇽 XX · Vless · 718ms | 297", "🇯🇵JP-45.32.52.173-28", "🇫🇷 法国 | FRA", "🇳🇱 NL · Haarlem · Vless · 98ms | 037", "🇸🇬SG-139.180.146.200-31", "🇸🇬[www.v2nodes.com] trojan-SG-...", "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206", "🇯🇵JP_1|1.2MB/s", "🇭🇰_HK_中国香港->🇯🇵_JP_日本", "🇺🇸_US_美国_2_2"]
+  - name: "AUTO"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 80
+    lazy: false
+    proxies: ["🇯🇵 日本 | JPN 2", "🇺🇸_US_美国", "🇯🇵 日本 | JPN_2", "🇽🇽 XX · Vless · 718ms | 297", "🇯🇵JP-45.32.52.173-28", "🇫🇷 法国 | FRA", "🇳🇱 NL · Haarlem · Vless · 98ms | 037", "🇭🇰_HK_中国香港->🇺🇸_US_美国", "🇸🇬SG-139.180.146.200-31", "🇸🇬[www.v2nodes.com] trojan-SG-...", "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206", "🇯🇵JP_1|1.2MB/s", "🇭🇰_HK_中国香港->🇯🇵_JP_日本", "🇺🇸_US_美国_2_2"]
+
+rules:
+  - "DOMAIN-SUFFIX,ghproxy.net,DIRECT"
+  - "DOMAIN-SUFFIX,githubusercontent.com,DIRECT"
+  - "DOMAIN-SUFFIX,githubrowcontent.com,DIRECT"
+  - "DOMAIN-SUFFIX,gh-proxy.com,DIRECT"
+  - "DOMAIN-SUFFIX,mirror.ghproxy.com,DIRECT"
+  - "DOMAIN-SUFFIX,testingcf.jsdelivr.net,DIRECT"
+  - "MATCH,PROXY"

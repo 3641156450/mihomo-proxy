@@ -1,0 +1,377 @@
+mixed-port: 7890
+mode: rule
+
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+proxies:
+  - name: "🇯🇵 日本 | JPN 2"
+    type: "trojan"
+    server: "45.32.52.173"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇺🇸_US_美国"
+    type: "vmess"
+    server: "guanwang.awsno.com"
+    port: 443
+    uuid: "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "guanwang.awsno.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "guanwang.awsno.com"
+  - name: "🇯🇵 日本 | JPN_2"
+    type: "vless"
+    server: "freev2.cloudflare.182682.xyz"
+    port: 443
+    uuid: "ed6ae8d0-0ad4-4828-8fee-621a650abb39"
+    network: "ws"
+    tls: true
+    servername: "jp-osa.862400.xyz"
+    ws-opts:
+      path: "/announcement?ed=2048"
+      headers:
+        Host: "jp-osa.862400.xyz"
+  - name: "🇽🇽 XX · Vless · 718ms | 297"
+    type: "vless"
+    server: "200.165.231.209"
+    port: 443
+    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
+    network: "ws"
+    tls: true
+    servername: "wstg.datasynctrue.online"
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "wstg.datasynctrue.online"
+  - name: "🇯🇵JP-45.32.52.173-28"
+    type: "trojan"
+    server: "45.32.52.173"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇫🇷 法国 | FRA"
+    type: "vless"
+    server: "redrocketnode-bidarbash.sbs"
+    port: 443
+    uuid: "2bdcf0ac-f84e-471f-98dc-a1807acab1cb"
+    network: "ws"
+    tls: true
+    servername: "redrocketnode-bidarbash.sbs"
+    ws-opts:
+      path: "/zoodi"
+      headers:
+        Host: "redrocketnode-bidarbash.sbs"
+  - name: "🇳🇱 NL · Haarlem · Vless · 98ms | 037"
+    type: "vless"
+    server: "188.114.97.6"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    network: "ws"
+    tls: true
+    servername: "lucasjow.us.ci"
+    ws-opts:
+      path: "/?Telegram---V2ray_confiig?ed"
+      headers:
+        Host: "lucasjow.us.ci"
+  - name: "🇭🇰_HK_中国香港->🇺🇸_US_美国"
+    type: "vmess"
+    server: "v4.hdacd.com"
+    port: 30804
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    tls: false
+    skip-cert-verify: true
+  - name: "🇸🇬SG-139.180.146.200-31"
+    type: "trojan"
+    server: "139.180.146.200"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇸🇬[www.v2nodes.com] trojan-SG-..."
+    type: "trojan"
+    server: "139.180.146.200"
+    port: 8886
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206"
+    type: "vmess"
+    server: "turknew.net-flowa.com"
+    port: 80
+    uuid: "cd96479e-9c39-4a7f-ba0c-806a83af19ca"
+    alterId: 0
+    cipher: "auto"
+    network: "http"
+  - name: "🇯🇵JP_1|1.2MB/s"
+    type: "trojan"
+    server: "45.32.52.173"
+    port: 8886
+    network: "tcp"
+    skip-cert-verify: true
+    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+  - name: "🇭🇰_HK_中国香港->🇯🇵_JP_日本"
+    type: "vmess"
+    server: "v6.hdacd.com"
+    port: 30806
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    tls: false
+    skip-cert-verify: true
+  - name: "🇺🇸_US_美国_2_2"
+    type: "vmess"
+    server: "www.shopify.com"
+    port: 443
+    uuid: "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "guanwang.awsno.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "guanwang.awsno.com"
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies: ["AUTO", "DIRECT", "🇭🇰_HK_中国香港->🇺🇸_US_美国", "🇯🇵 日本 | JPN 2", "🇺🇸_US_美国", "🇯🇵 日本 | JPN_2", "🇽🇽 XX · Vless · 718ms | 297", "🇯🇵JP-45.32.52.173-28", "🇫🇷 法国 | FRA", "🇳🇱 NL · Haarlem · Vless · 98ms | 037", "🇸🇬SG-139.180.146.200-31", "🇸🇬[www.v2nodes.com] trojan-SG-...", "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206", "🇯🇵JP_1|1.2MB/s", "🇭🇰_HK_中国香港->🇯🇵_JP_日本", "🇺🇸_US_美国_2_2"]
+  - name: "AUTO"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 80
+    lazy: false
+    proxies: ["🇯🇵 日本 | JPN 2", "🇺🇸_US_美国", "🇯🇵 日本 | JPN_2", "🇽🇽 XX · Vless · 718ms | 297", "🇯🇵JP-45.32.52.173-28", "🇫🇷 法国 | FRA", "🇳🇱 NL · Haarlem · Vless · 98ms | 037", "🇭🇰_HK_中国香港->🇺🇸_US_美国", "🇸🇬SG-139.180.146.200-31", "🇸🇬[www.v2nodes.com] trojan-SG-...", "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206", "🇯🇵JP_1|1.2MB/s", "🇭🇰_HK_中国香港->🇯🇵_JP_日本", "🇺🇸_US_美国_2_2"]
+
+rules:
+  - "DOMAIN-SUFFIX,baidu.com,DIRECT"
+  - "DOMAIN-SUFFIX,baiducontent.com,DIRECT"
+  - "DOMAIN-SUFFIX,baiduimg.com,DIRECT"
+  - "DOMAIN-SUFFIX,baidustatic.com,DIRECT"
+  - "DOMAIN-SUFFIX,baidupcs.com,DIRECT"
+  - "DOMAIN-SUFFIX,pan.baidu.com,DIRECT"
+  - "DOMAIN-SUFFIX,map.baidu.com,DIRECT"
+  - "DOMAIN-SUFFIX,baidumap.com,DIRECT"
+  - "DOMAIN-SUFFIX,tieba.baidu.com,DIRECT"
+  - "DOMAIN-SUFFIX,qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,qzone.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,weixin.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,wx.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,wxapp.tc.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,weishi.com,DIRECT"
+  - "DOMAIN-SUFFIX,v.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,maps.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,mail.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,exmail.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,tencent.com,DIRECT"
+  - "DOMAIN-SUFFIX,tencent.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,qcloud.com,DIRECT"
+  - "DOMAIN-SUFFIX,cloud.tencent.com,DIRECT"
+  - "DOMAIN-SUFFIX,tencentcloud.com,DIRECT"
+  - "DOMAIN-SUFFIX,sj.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,myapp.com,DIRECT"
+  - "DOMAIN-SUFFIX,app.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,sina.com,DIRECT"
+  - "DOMAIN-SUFFIX,sina.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,sinaimg.cn,DIRECT"
+  - "DOMAIN-SUFFIX,sinajs.cn,DIRECT"
+  - "DOMAIN-SUFFIX,weibo.com,DIRECT"
+  - "DOMAIN-SUFFIX,weibo.cn,DIRECT"
+  - "DOMAIN-SUFFIX,weiboimg.com,DIRECT"
+  - "DOMAIN-SUFFIX,weibocdn.com,DIRECT"
+  - "DOMAIN-SUFFIX,sohu.com,DIRECT"
+  - "DOMAIN-SUFFIX,sohucs.com,DIRECT"
+  - "DOMAIN-SUFFIX,sohucdn.com,DIRECT"
+  - "DOMAIN-SUFFIX,163.com,DIRECT"
+  - "DOMAIN-SUFFIX,126.com,DIRECT"
+  - "DOMAIN-SUFFIX,126.net,DIRECT"
+  - "DOMAIN-SUFFIX,netease.com,DIRECT"
+  - "DOMAIN-SUFFIX,music.163.com,DIRECT"
+  - "DOMAIN-SUFFIX,youdao.com,DIRECT"
+  - "DOMAIN-SUFFIX,iciba.com,DIRECT"
+  - "DOMAIN-SUFFIX,foxmail.com,DIRECT"
+  - "DOMAIN-SUFFIX,yeah.net,DIRECT"
+  - "DOMAIN-SUFFIX,360.com,DIRECT"
+  - "DOMAIN-SUFFIX,360.cn,DIRECT"
+  - "DOMAIN-SUFFIX,360safe.com,DIRECT"
+  - "DOMAIN-SUFFIX,360kuai.com,DIRECT"
+  - "DOMAIN-SUFFIX,hao123.com,DIRECT"
+  - "DOMAIN-SUFFIX,2345.com,DIRECT"
+  - "DOMAIN-SUFFIX,114la.com,DIRECT"
+  - "DOMAIN-SUFFIX,taobao.com,DIRECT"
+  - "DOMAIN-SUFFIX,tmall.com,DIRECT"
+  - "DOMAIN-SUFFIX,alibaba.com,DIRECT"
+  - "DOMAIN-SUFFIX,alibaba.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,aliyun.com,DIRECT"
+  - "DOMAIN-SUFFIX,aliyuncs.com,DIRECT"
+  - "DOMAIN-SUFFIX,alipay.com,DIRECT"
+  - "DOMAIN-SUFFIX,alipayobjects.com,DIRECT"
+  - "DOMAIN-SUFFIX,1688.com,DIRECT"
+  - "DOMAIN-SUFFIX,cainiao.com,DIRECT"
+  - "DOMAIN-SUFFIX,wanwang.aliyun.com,DIRECT"
+  - "DOMAIN-SUFFIX,dnspod.cn,DIRECT"
+  - "DOMAIN-SUFFIX,dnspod.com,DIRECT"
+  - "DOMAIN-SUFFIX,hichina.com,DIRECT"
+  - "DOMAIN-SUFFIX,jd.com,DIRECT"
+  - "DOMAIN-SUFFIX,jd.hk,DIRECT"
+  - "DOMAIN-SUFFIX,suning.com,DIRECT"
+  - "DOMAIN-SUFFIX,suning.cn,DIRECT"
+  - "DOMAIN-SUFFIX,pinduoduo.com,DIRECT"
+  - "DOMAIN-SUFFIX,vip.com,DIRECT"
+  - "DOMAIN-SUFFIX,dangdang.com,DIRECT"
+  - "DOMAIN-SUFFIX,amazon.cn,DIRECT"
+  - "DOMAIN-SUFFIX,smzdm.com,DIRECT"
+  - "DOMAIN-SUFFIX,zhihu.com,DIRECT"
+  - "DOMAIN-SUFFIX,zhimg.com,DIRECT"
+  - "DOMAIN-SUFFIX,douban.com,DIRECT"
+  - "DOMAIN-SUFFIX,doubanio.com,DIRECT"
+  - "DOMAIN-SUFFIX,bilibili.com,DIRECT"
+  - "DOMAIN-SUFFIX,bilibili.tv,DIRECT"
+  - "DOMAIN-SUFFIX,acfun.cn,DIRECT"
+  - "DOMAIN-SUFFIX,acfun.com,DIRECT"
+  - "DOMAIN-SUFFIX,acfun.tv,DIRECT"
+  - "DOMAIN-SUFFIX,kuaishou.com,DIRECT"
+  - "DOMAIN-SUFFIX,ks-cdn.com,DIRECT"
+  - "DOMAIN-SUFFIX,douyin.com,DIRECT"
+  - "DOMAIN-SUFFIX,iesdouyin.com,DIRECT"
+  - "DOMAIN-SUFFIX,toutiao.com,DIRECT"
+  - "DOMAIN-SUFFIX,toutiaocdn.com,DIRECT"
+  - "DOMAIN-SUFFIX,pstatp.com,DIRECT"
+  - "DOMAIN-SUFFIX,ixigua.com,DIRECT"
+  - "DOMAIN-SUFFIX,inews.gtimg.com,DIRECT"
+  - "DOMAIN-SUFFIX,xiaohongshu.com,DIRECT"
+  - "DOMAIN-SUFFIX,xhscdn.com,DIRECT"
+  - "DOMAIN-SUFFIX,hupu.com,DIRECT"
+  - "DOMAIN-SUFFIX,huya.com,DIRECT"
+  - "DOMAIN-SUFFIX,douyu.com,DIRECT"
+  - "DOMAIN-SUFFIX,yy.com,DIRECT"
+  - "DOMAIN-SUFFIX,iqiyi.com,DIRECT"
+  - "DOMAIN-SUFFIX,iqiyipic.com,DIRECT"
+  - "DOMAIN-SUFFIX,qiyipic.com,DIRECT"
+  - "DOMAIN-SUFFIX,youku.com,DIRECT"
+  - "DOMAIN-SUFFIX,tudou.com,DIRECT"
+  - "DOMAIN-SUFFIX,le.com,DIRECT"
+  - "DOMAIN-SUFFIX,mgtv.com,DIRECT"
+  - "DOMAIN-SUFFIX,kugou.com,DIRECT"
+  - "DOMAIN-SUFFIX,kuwo.cn,DIRECT"
+  - "DOMAIN-SUFFIX,taihe.com,DIRECT"
+  - "DOMAIN-SUFFIX,fogu.com,DIRECT"
+  - "DOMAIN-SUFFIX,mi.com,DIRECT"
+  - "DOMAIN-SUFFIX,huawei.com,DIRECT"
+  - "DOMAIN-SUFFIX,vivo.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,oppo.com,DIRECT"
+  - "DOMAIN-SUFFIX,oneplus.com,DIRECT"
+  - "DOMAIN-SUFFIX,meizu.com,DIRECT"
+  - "DOMAIN-SUFFIX,10086.cn,DIRECT"
+  - "DOMAIN-SUFFIX,10010.com,DIRECT"
+  - "DOMAIN-SUFFIX,189.cn,DIRECT"
+  - "DOMAIN-SUFFIX,cmcc.com,DIRECT"
+  - "DOMAIN-SUFFIX,chinamobile.com,DIRECT"
+  - "DOMAIN-SUFFIX,chinaunicom.com,DIRECT"
+  - "DOMAIN-SUFFIX,chinatelecom.com,DIRECT"
+  - "DOMAIN-SUFFIX,chinapost.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,ems.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,sf-express.com,DIRECT"
+  - "DOMAIN-SUFFIX,zto.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,yto.net.cn,DIRECT"
+  - "DOMAIN-SUFFIX,sto.cn,DIRECT"
+  - "DOMAIN-SUFFIX,yundaex.com,DIRECT"
+  - "DOMAIN-SUFFIX,icbc.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,icbc.com,DIRECT"
+  - "DOMAIN-SUFFIX,ccb.com,DIRECT"
+  - "DOMAIN-SUFFIX,ccb.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,abchina.com,DIRECT"
+  - "DOMAIN-SUFFIX,cmbchina.com,DIRECT"
+  - "DOMAIN-SUFFIX,boc.cn,DIRECT"
+  - "DOMAIN-SUFFIX,bankcomm.com,DIRECT"
+  - "DOMAIN-SUFFIX,pingan.com,DIRECT"
+  - "DOMAIN-SUFFIX,cib.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,spdb.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,cebbank.com,DIRECT"
+  - "DOMAIN-SUFFIX,cmbc.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,hxb.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,unionpay.com,DIRECT"
+  - "DOMAIN-SUFFIX,unionpaysecure.com,DIRECT"
+  - "DOMAIN-SUFFIX,95516.com,DIRECT"
+  - "DOMAIN-SUFFIX,chinaunionpay.com,DIRECT"
+  - "DOMAIN-SUFFIX,antgroup.com,DIRECT"
+  - "DOMAIN-SUFFIX,mybank.cn,DIRECT"
+  - "DOMAIN-SUFFIX,gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,edu.cn,DIRECT"
+  - "DOMAIN-SUFFIX,moe.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,ndrc.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,mps.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,mfa.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,customs.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,chinatax.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,sat.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,chsi.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,eol.cn,DIRECT"
+  - "DOMAIN-SUFFIX,people.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,xinhuanet.com,DIRECT"
+  - "DOMAIN-SUFFIX,cctv.com,DIRECT"
+  - "DOMAIN-SUFFIX,cntv.cn,DIRECT"
+  - "DOMAIN-SUFFIX,chinanews.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,thepaper.cn,DIRECT"
+  - "DOMAIN-SUFFIX,ifeng.com,DIRECT"
+  - "DOMAIN-SUFFIX,phoenix.com,DIRECT"
+  - "DOMAIN-SUFFIX,phoenixnewstv.com,DIRECT"
+  - "DOMAIN-SUFFIX,ctrip.com,DIRECT"
+  - "DOMAIN-SUFFIX,qunar.com,DIRECT"
+  - "DOMAIN-SUFFIX,12306.cn,DIRECT"
+  - "DOMAIN-SUFFIX,meituan.com,DIRECT"
+  - "DOMAIN-SUFFIX,dianping.com,DIRECT"
+  - "DOMAIN-SUFFIX,didiglobal.com,DIRECT"
+  - "DOMAIN-SUFFIX,didi.com,DIRECT"
+  - "DOMAIN-SUFFIX,didichuxing.com,DIRECT"
+  - "DOMAIN-SUFFIX,trip.com,DIRECT"
+  - "DOMAIN-SUFFIX,elong.com,DIRECT"
+  - "DOMAIN-SUFFIX,ele.me,DIRECT"
+  - "DOMAIN-SUFFIX,hellobike.com,DIRECT"
+  - "DOMAIN-SUFFIX,ofo.com,DIRECT"
+  - "DOMAIN-SUFFIX,amap.com,DIRECT"
+  - "DOMAIN-SUFFIX,maps.amap.com,DIRECT"
+  - "DOMAIN-SUFFIX,csdn.net,DIRECT"
+  - "DOMAIN-SUFFIX,oschina.net,DIRECT"
+  - "DOMAIN-SUFFIX,cnblogs.com,DIRECT"
+  - "DOMAIN-SUFFIX,iteye.com,DIRECT"
+  - "DOMAIN-SUFFIX,infoq.com,DIRECT"
+  - "DOMAIN-SUFFIX,segmentfault.com,DIRECT"
+  - "DOMAIN-SUFFIX,v2ex.com,DIRECT"
+  - "DOMAIN-SUFFIX,hostloc.com,DIRECT"
+  - "DOMAIN-SUFFIX,chiphell.com,DIRECT"
+  - "DOMAIN-SUFFIX,cnzz.com,DIRECT"
+  - "DOMAIN-SUFFIX,umeng.com,DIRECT"
+  - "DOMAIN-SUFFIX,tcss.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,mta.qq.com,DIRECT"
+  - "DOMAIN-SUFFIX,aizhan.com,DIRECT"
+  - "DOMAIN-SUFFIX,chinaz.com,DIRECT"
+  - "DOMAIN-SUFFIX,weather.com.cn,DIRECT"
+  - "DOMAIN-SUFFIX,cma.gov.cn,DIRECT"
+  - "DOMAIN-SUFFIX,ip.cn,DIRECT"
+  - "DOMAIN-SUFFIX,ip138.com,DIRECT"
+  - "DOMAIN-SUFFIX,91160.com,DIRECT"
+  - "DOMAIN-SUFFIX,guahao.com,DIRECT"
+  - "DOMAIN-SUFFIX,haodf.com,DIRECT"
+  - "DOMAIN-SUFFIX,dxy.com,DIRECT"
+  - "DOMAIN-SUFFIX,dogecloud.com,DIRECT"
+  - "MATCH,PROXY"
+
+# ===== injected by desktop script (local control only) =====
+external-controller: 127.0.0.1:9090
+secret: "mihomo-desktop"
+allow-lan: false
