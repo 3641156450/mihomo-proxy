@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mihomo-proxy · 一键下载</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --line:#262b35; --txt:#e6e9ef; --sub:#9aa4b2;
+    --brand:#4f8cff; --brand2:#27c39f; --red:#ff5d5d; --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#1b2030 0%,var(--bg) 60%);
+    color:var(--txt);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+  }
+  .wrap{width:100%;max-width:680px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:34px 30px;box-shadow:var(--shadow);
+  }
+  .badge{display:inline-block;font-size:12px;letter-spacing:.5px;color:var(--brand2);
+    background:rgba(39,195,159,.12);border:1px solid rgba(39,195,159,.3);padding:4px 10px;border-radius:999px;margin-bottom:14px}
+  h1{font-size:26px;font-weight:700;margin-bottom:8px}
+  .desc{color:var(--sub);font-size:14px;line-height:1.7;margin-bottom:22px}
+  .dl{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;padding:16px 20px;border-radius:14px;text-decoration:none;
+    font-size:17px;font-weight:600;color:#fff;
+    background:linear-gradient(135deg,var(--brand),#6aa0ff);
+    box-shadow:0 8px 22px rgba(79,140,255,.35);transition:transform .08s ease,box-shadow .2s ease;
+  }
+  .dl:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(79,140,255,.45)}
+  .dl:active{transform:translateY(1px)}
+  .meta{display:flex;gap:18px;flex-wrap:wrap;color:var(--sub);font-size:13px;margin-top:14px;justify-content:center}
+  .meta b{color:var(--txt)}
+  .sec{margin-top:26px;border-top:1px solid var(--line);padding-top:22px}
+  .sec h2{font-size:15px;color:var(--txt);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .sec h2::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--brand2)}
+  ol,ul{color:var(--sub);font-size:13.5px;line-height:1.9;padding-left:20px}
+  code{background:#0c0e13;border:1px solid var(--line);padding:2px 7px;border-radius:6px;color:#ffd479;font-size:12.5px}
+  .warn{background:rgba(255,93,93,.08);border:1px solid rgba(255,93,93,.25);color:#ffb4b4;
+    border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.7;margin-top:18px}
+  .foot{text-align:center;color:#5b6675;font-size:12px;margin-top:24px}
+  a.inline{color:var(--brand);text-decoration:none}
+  a.inline:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <span class="badge">MIHOMO 代理 · 完整备份包</span>
+    <h1>mihomo-proxy 一键下载</h1>
+    <p class="desc">
+      这是 <b>mihomo（Clash.Meta）</b> 订阅中转 + 公共节点聚合项目的完整离线包，包含可执行程序、配置生成脚本、订阅服务端与一键启动脚本。
+      点击下方按钮即可把整个项目下载到本地，解压即用。
+    </p>
+
+    <a class="dl" href="mihomo-proxy.zip" download="mihomo-proxy.zip">
+      ⬇ 下载完整包（mihomo-proxy.zip）
+    </a>
+    <div class="meta">
+      <span>文件大小：<b>约 21.6 MB</b></span>
+      <span>包含 <b>mihomo.exe</b></span>
+      <span>更新：<b>2026-10-20</b></span>
+    </div>
+
+    <div class="sec">
+      <h2>包里有什么</h2>
+      <ul>
+        <li><code>mihomo.exe</code> —— 代理内核（Clash.Meta 分支）</li>
+        <li><code>build_live.py</code> —— 从 18 个公共源抓取、测速、去重生成节点配置</li>
+        <li><code>sub_server.py</code> / <code>sub_server.bat</code> —— 本地订阅中转服务（0.0.0.0:9099）</li>
+        <li><code>start.bat</code> / <code>stop.bat</code> —— 一键启动 / 停止</li>
+        <li><code>set_proxy.py</code> —— 设置 Windows 系统代理</li>
+        <li><code>keepalive_sub.py</code> —— 订阅保活（配合系统计划任务每 5 分钟）</li>
+        <li><code>config.yaml</code> / <code>sub.yaml</code> / <code>README.txt</code> / <code>AUTOMATION_TASK.md</code></li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <h2>怎么用</h2>
+      <ol>
+        <li>下载并解压到任意目录（例如 <code>D:\mihomo-proxy</code>）。</li>
+        <li>右键 <code>start.bat</code> 以管理员身份运行，启动内核与订阅服务。</li>
+        <li>本机客户端订阅地址：<code>http://127.0.0.1:9099/sub.yaml</code>。</li>
+        <li>手机等其他设备：连同一 Wi-Fi，用电脑主机名访问
+          <code>http://HP-ABC:9099/sub.yaml</code>（或把 <code>HP-ABC</code> 换成电脑的局域网 IP）。</li>
+        <li>设置系统代理后即可上网；不用时运行 <code>stop.bat</code>。</li>
+      </ol>
+    </div>
+
+    <div class="warn">
+      <b>双路由器 / 双 IP 注意：</b>若你家有两个路由器（如 <code>aijiujiu</code> 的 192.168.3.x 与 <code>aijiujiu2lou</code> 的 192.168.101.x），
+      手机若连的是另一网段，需把订阅地址里的主机名换成电脑<strong>当前所在网段</strong>的 IP，或把副路由改成 AP / 桥接模式，让全家在一个网段下。
+      订阅服务已绑定 <code>0.0.0.0</code> 并会在启动时打印所有局域网 IP，照着填即可。
+    </div>
+
+    <p class="foot">
+      本页为离线备份镜像 · 原始仓库见
+      <a class="inline" href="https://github.com/3641156450/mihomo-proxy" target="_blank" rel="noopener">GitHub</a>
+      （若 GitHub 访问不畅，请走代理）
+    </p>
+  </div>
+</div>
+</body>
+</html>
