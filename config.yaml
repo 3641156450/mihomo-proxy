@@ -9,82 +9,81 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - name: "🇯🇵 日本 | JPN 2"
-    type: "trojan"
-    server: "45.32.52.173"
-    port: 8886
-    skip-cert-verify: true
-    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
-  - name: "🇺🇸_US_美国"
+  - name: "рџ‡Ёрџ‡і_CN_дё­е›Ң"
     type: "vmess"
-    server: "guanwang.awsno.com"
-    port: 443
-    uuid: "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    server: "112.132.215.108"
+    port: 50002
+    uuid: "418048af-a293-4b99-9b0c-98ca3580dd24"
+    alterId: 64
+    cipher: "auto"
+    tls: false
+    skip-cert-verify: true
+  - name: "未知 VMESS-887 | free-nodes"
+    type: "vmess"
+    server: "150.109.240.179"
+    port: 8443
+    uuid: "f9dcb303-3e73-40eb-9327-1ac88f9a2b72"
     alterId: 0
     cipher: "auto"
     network: "ws"
     tls: true
     skip-cert-verify: true
-    servername: "guanwang.awsno.com"
+    servername: "www.bing.com"
     ws-opts:
-      path: "/hls/cctv5phd.m3u8"
+      path: "/wsproxy"
       headers:
-        Host: "guanwang.awsno.com"
-  - name: "🇯🇵 日本 | JPN_2"
+        Host: "www.bing.com"
+  - name: "🇺🇸美國丨yoyapai.com_3"
     type: "vless"
-    server: "freev2.cloudflare.182682.xyz"
+    server: "www.true.th"
     port: 443
-    uuid: "ed6ae8d0-0ad4-4828-8fee-621a650abb39"
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
     network: "ws"
     tls: true
-    servername: "jp-osa.862400.xyz"
+    skip-cert-verify: false
+    servername: "d1yxsk0zprgivr.cloudfront.net"
     ws-opts:
-      path: "/announcement?ed=2048"
-      headers:
-        Host: "jp-osa.862400.xyz"
-  - name: "🇽🇽 XX · Vless · 718ms | 297"
+      path: "/"
+  - name: "❓未知丨yoyapai.com_61"
     type: "vless"
-    server: "200.165.231.209"
+    server: "172.64.152.241"
     port: 443
-    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     network: "ws"
     tls: true
-    servername: "wstg.datasynctrue.online"
+    skip-cert-verify: false
+    servername: "ccc.010304.xyz"
     ws-opts:
-      path: "/api/connect"
+      path: "/"
       headers:
-        Host: "wstg.datasynctrue.online"
-  - name: "🇯🇵JP-45.32.52.173-28"
-    type: "trojan"
-    server: "45.32.52.173"
-    port: 8886
-    skip-cert-verify: true
-    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
-  - name: "🇫🇷 法国 | FRA"
+        Host: "ccc.010304.xyz"
+  - name: "❓未知丨yoyapai.com_60"
     type: "vless"
-    server: "redrocketnode-bidarbash.sbs"
+    server: "172.64.152.241"
     port: 443
-    uuid: "2bdcf0ac-f84e-471f-98dc-a1807acab1cb"
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     network: "ws"
     tls: true
-    servername: "redrocketnode-bidarbash.sbs"
+    skip-cert-verify: false
+    servername: "ccc.010304.xyz"
     ws-opts:
-      path: "/zoodi"
+      path: "/fp"
       headers:
-        Host: "redrocketnode-bidarbash.sbs"
-  - name: "🇳🇱 NL · Haarlem · Vless · 98ms | 037"
+        Host: "ccc.010304.xyz"
+  - name: "❓未知丨yoyapai.com_14_2"
     type: "vless"
-    server: "188.114.97.6"
+    server: "www.true.th"
     port: 443
-    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
     network: "ws"
     tls: true
-    servername: "lucasjow.us.ci"
+    skip-cert-verify: false
+    servername: "d1yxsk0zprgivr.cloudfront.net"
     ws-opts:
-      path: "/?Telegram---V2ray_confiig?ed"
+      path: "/"
       headers:
-        Host: "lucasjow.us.ci"
-  - name: "🇭🇰_HK_中国香港->🇺🇸_US_美国"
+        Host: "d1yxsk0zprgivr.cloudfront.net"
+  - name: "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡®рџ‡Ғ_IE_з€±е°”е…°"
     type: "vmess"
     server: "v4.hdacd.com"
     port: 30804
@@ -93,69 +92,1069 @@ proxies:
     cipher: "auto"
     tls: false
     skip-cert-verify: true
-  - name: "🇸🇬SG-139.180.146.200-31"
-    type: "trojan"
-    server: "139.180.146.200"
-    port: 8886
-    skip-cert-verify: true
-    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
-  - name: "🇸🇬[www.v2nodes.com] trojan-SG-..."
-    type: "trojan"
-    server: "139.180.146.200"
-    port: 8886
-    skip-cert-verify: true
-    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
-  - name: "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206"
-    type: "vmess"
-    server: "turknew.net-flowa.com"
+  - name: "🇯🇵JP日本丨yoyapai.com_2_2"
+    type: "vless"
+    server: "us22.sofast.live"
+    port: 58011
+    uuid: "0afc6426-606c-48e7-bd70-3c424a416842"
+    tls: false
+    skip-cert-verify: false
+  - name: "❓未知丨yoyapai.com_54"
+    type: "vless"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "399b6b23-cc40-4831-a494-61948e2df133"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇨🇦加拿大丨yoyapai.com_1_2"
+    type: "vless"
+    server: "104.17.121.110"
+    port: 8880
+    uuid: "f3d6c244-772a-428f-b8fe-e2d632cd76e4"
+    network: "httpupgrade"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇺🇸US美國丨yoyapai.com_8_2"
+    type: "vless"
+    server: "cf.090227.xyz"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "美國節點丨yoyapai.com_2"
+    type: "vless"
+    server: "www.true.th"
     port: 80
-    uuid: "cd96479e-9c39-4a7f-ba0c-806a83af19ca"
+    uuid: "89c3b66f-c849-4602-a5a8-84b6f06af478"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    servername: "d2pwbkmfr5lxa4.cloudfront.net"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "d2pwbkmfr5lxa4.cloudfront.net"
+  - name: "🇹🇭TH泰國丨yoyapai.com_2"
+    type: "vless"
+    server: "www.true.th"
+    port: 80
+    uuid: "63ae5b68-f6f8-432e-b440-d975053cfbc2"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/than"
+      headers:
+        Host: "d16l6nb4do0zu4.cloudfront.net"
+  - name: "❓未知丨yoyapai.com_53"
+    type: "vless"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "399b6b23-cc40-4831-a494-61948e2df133"
+    tls: false
+    skip-cert-verify: false
+  - name: "❓未知丨yoyapai.com_30"
+    type: "vless"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "399b6b23-cc40-4831-a494-61948e2df133"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇨🇦加拿大丨yoyapai.com_1"
+    type: "vless"
+    server: "104.17.121.110"
+    port: 8880
+    uuid: "f3d6c244-772a-428f-b8fe-e2d632cd76e4"
+    network: "httpupgrade"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇳🇱NL_1|3.8MB/s"
+    type: "vmess"
+    server: "v29.hdacd.com"
+    port: 30829
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: "2"
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: false
+  - name: "RELAY-104.17.147.222-0201 | 0.0MB"
+    type: "vmess"
+    server: "104.17.147.222"
+    port: 80
+    uuid: "0cf6d970-3f1d-4aae-a989-92a8f76ae3db"
     alterId: 0
     cipher: "auto"
-    network: "http"
-  - name: "🇯🇵JP_1|1.2MB/s"
-    type: "trojan"
-    server: "45.32.52.173"
-    port: 8886
-    network: "tcp"
-    skip-cert-verify: true
-    password: "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
-  - name: "🇭🇰_HK_中国香港->🇯🇵_JP_日本"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vmess.lbw666.dpdns.org"
+  - name: "🇹🇭TH泰國丨yoyapai.com_1_2"
+    type: "vless"
+    server: "www.true.th"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "d1yxsk0zprgivr.cloudfront.net"
+  - name: "🇺🇸 US · Minneapolis · Vless · 73ms | 013"
+    type: "vless"
+    server: "172.64.152.241"
+    port: 443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
+    network: "ws"
+    tls: true
+    servername: "ccc.010304.xyz"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "ccc.010304.xyz"
+  - name: "🇹🇭TH泰國丨yoyapai.com_1"
+    type: "vless"
+    server: "www.true.th"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "d1yxsk0zprgivr.cloudfront.net"
+  - name: "🇭🇰 香港5|@ripaojiedian_3"
     type: "vmess"
-    server: "v6.hdacd.com"
-    port: 30806
+    server: "syJ2gGUgMwBwQwQx.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "syJ2gGUgMwBwQwQx.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "syJ2gGUgMwBwQwQx.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇺🇸美國丨yoyapai.com"
+    type: "vless"
+    server: "www.true.th"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    ws-opts:
+      path: "/"
+  - name: "🇺🇸US美国丨yoyapai.com_13"
+    type: "vless"
+    server: "www.speedtest.net"
+    port: 443
+    uuid: "d4733e5a-5850-4523-942e-f28f82ebf4a9"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "party-5cn.pages.dev"
+    ws-opts:
+      path: "/"
+  - name: "US美国(v2clash.blog 2026-10.13更新)_67"
+    type: "vless"
+    server: "www.speedtest.net"
+    port: 443
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "snip.edgeoneai.cc.cd"
+    ws-opts:
+      path: "/fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn"
+      headers:
+        Host: "snip.edgeoneai.cc.cd"
+  - name: "🇹🇭TH泰国"
+    type: "vmess"
+    server: "www.true.th"
+    port: 80
+    uuid: "a150d554-e962-4632-829f-ee583ada3f95"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/htun"
+      headers:
+        Host: "d7pu5mzr9c4b0.cloudfront.net"
+  - name: "FR法國丨yoyapai.com_6"
+    type: "vless"
+    server: "store.ubi.com"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "🇺🇸US_2|3.5MB/s"
+    type: "vmess"
+    server: "120.232.202.14"
+    port: 8033
+    uuid: "74499dd9-f4c0-4450-8a4a-e06c8b25b77d"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      headers:
+        Host: "tms.dingtalk.com"
+      path: "/3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f"
+  - name: "🇺🇸US-103.224.182.210-0205 | 0.0MB"
+    type: "vmess"
+    server: "db01.paopaocloud.cyou"
+    port: 443
+    uuid: "d8c5b486-84bb-3887-a1d9-07455ea608f2"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "db01.paopaocloud.cyou"
+  - name: "FR法國丨yoyapai.com"
+    type: "vless"
+    server: "cf.130519.xyz"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "❓未知丨yoyapai.com_28"
+    type: "vless"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "399b6b23-cc40-4831-a494-61948e2df133"
+    tls: false
+    skip-cert-verify: false
+  - name: "❓未知丨yoyapai.com_29"
+    type: "vless"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "399b6b23-cc40-4831-a494-61948e2df133"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇭🇰 香港2|@ripaojiedian_2"
+    type: "vmess"
+    server: "kBONDXW9liFCi4h4.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "kBONDXW9liFCi4h4.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "kBONDXW9liFCi4h4.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇹🇭TH泰國丨yoyapai.com"
+    type: "vless"
+    server: "www.true.th"
+    port: 80
+    uuid: "63ae5b68-f6f8-432e-b440-d975053cfbc2"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/than"
+      headers:
+        Host: "d16l6nb4do0zu4.cloudfront.net"
+  - name: "🇯🇵 日本3|@ripaojiedian_2"
+    type: "vmess"
+    server: "kneNaKHeSXnZH259.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "kneNaKHeSXnZH259.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "kneNaKHeSXnZH259.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "FR法國丨yoyapai.com_3"
+    type: "vless"
+    server: "store.ubi.com"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡«рџ‡·_FR_жі•е›Ң"
+    type: "vmess"
+    server: "v35.hdacd.com"
+    port: 30835
     uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
     alterId: 2
     cipher: "auto"
     tls: false
     skip-cert-verify: true
-  - name: "🇺🇸_US_美国_2_2"
+  - name: "🇭🇰 香港4|@ripaojiedian_2"
     type: "vmess"
-    server: "www.shopify.com"
+    server: "aZW0eunYVdvRe73k.v.3dns.vip"
     port: 443
-    uuid: "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "aZW0eunYVdvRe73k.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "aZW0eunYVdvRe73k.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "❓未知丨yoyapai.com_27"
+    type: "vless"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "399b6b23-cc40-4831-a494-61948e2df133"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇨🇦加拿大丨yoyapai.com_3_2"
+    type: "vless"
+    server: "104.17.121.110"
+    port: 8880
+    uuid: "c0a7e427-1034-485a-b5c7-4449bd04b28d"
+    network: "httpupgrade"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇭🇰 HK · Hong Kong · Vmess · 360ms | 203"
+    type: "vmess"
+    server: "47.242.81.94"
+    port: 52080
+    uuid: "e47b9f77-60e4-4738-8d53-772b6002e146"
+    alterId: 0
+    cipher: "auto"
+    network: "http"
+  - name: "🇰🇷KR韩國丨yoyapai.com"
+    type: "vless"
+    server: "104.17.144.29"
+    port: 8880
+    uuid: "81d55675-8570-4b40-9a77-3125339a0f86"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: "spring-sound-8d8e.36-9ff.workers.dev"
+  - name: "🇯🇵 日本2|@ripaojiedian_2"
+    type: "vmess"
+    server: "kQov7UKaDknXb8a3.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "kQov7UKaDknXb8a3.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "kQov7UKaDknXb8a3.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇯🇵 日本|@ripaojiedian_2"
+    type: "vmess"
+    server: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇭🇰 香港2|@ripaojiedian_3"
+    type: "vmess"
+    server: "kBONDXW9liFCi4h4.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "kBONDXW9liFCi4h4.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "kBONDXW9liFCi4h4.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇯🇵 日本|@ripaojiedian_3"
+    type: "vmess"
+    server: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇭🇰 香港 | HKG #3"
+    type: "vless"
+    server: "103.242.15.87"
+    port: 443
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    network: "ws"
+    tls: true
+    servername: "snip.edgeoneai.cc.cd"
+    ws-opts:
+      headers:
+        Host: "snip.edgeoneai.cc.cd"
+      path: "/"
+  - name: "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡ірџ‡±_NL_иҚ·е…°"
+    type: "vmess"
+    server: "v29.hdacd.com"
+    port: 30829
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    tls: false
+    skip-cert-verify: true
+  - name: "🇯🇵 日本3|@ripaojiedian_3"
+    type: "vmess"
+    server: "kneNaKHeSXnZH259.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "kneNaKHeSXnZH259.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "kneNaKHeSXnZH259.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "❓未知丨yoyapai.com_34"
+    type: "vless"
+    server: "www.true.th"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "d1yxsk0zprgivr.cloudfront.net"
+  - name: "🇹🇭TH泰国丨yoyapai.com_1_2"
+    type: "vmess"
+    server: "www.true.th"
+    port: 80
+    uuid: "a150d554-e962-4632-829f-ee583ada3f95"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/htun"
+      headers:
+        Host: "d7pu5mzr9c4b0.cloudfront.net"
+  - name: "🇯🇵 日本 | JPN 2_2"
+    type: "vless"
+    server: "216.238.54.114"
+    port: 8443
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    network: "ws"
+    tls: true
+    servername: "snip.edgeoneai.cc.cd"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "snip.edgeoneai.cc.cd"
+  - name: "🇸🇬SG新加坡丨yoyapai.com_4"
+    type: "vless"
+    server: "104.17.191.15"
+    port: 8880
+    uuid: "adcce8be-9de7-41bd-abcd-52939cec108b"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      headers:
+        Host: "fancy-haze-ab00.236-68b.workers.dev"
+  - name: "🇯🇵 日本2|@ripaojiedian_3"
+    type: "vmess"
+    server: "kQov7UKaDknXb8a3.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "kQov7UKaDknXb8a3.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "kQov7UKaDknXb8a3.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "未知 VMESS-1304 | free-nodes"
+    type: "vmess"
+    server: "sylva53.ceoiii.com"
+    port: 36824
+    uuid: "4f198ea9-311e-3dcf-910c-896de6cb160b"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    servername: "ajax.microsoft.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "ajax.microsoft.com"
+  - name: "❓未知丨yoyapai.com_38"
+    type: "trojan"
+    server: "104.17.111.4"
+    port: 443
+    skip-cert-verify: false
+    password: "humanity"
+    ws-opts:
+      path: "/assignment"
+  - name: "美國節點丨yoyapai.com"
+    type: "vless"
+    server: "www.true.th"
+    port: 80
+    uuid: "89c3b66f-c849-4602-a5a8-84b6f06af478"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    servername: "d2pwbkmfr5lxa4.cloudfront.net"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "d2pwbkmfr5lxa4.cloudfront.net"
+  - name: "🇭🇰[www.v2nodes.com] trojan-HK-..._3"
+    type: "trojan"
+    server: "4c2d5151.266nets.com"
+    port: 12001
+    skip-cert-verify: true
+    password: "bad06c3525a6eaee1757b34776b83892"
+  - name: "未知 VMESS-1302 | free-nodes"
+    type: "vmess"
+    server: "sylva51.ceoiii.com"
+    port: 36822
+    uuid: "4f198ea9-311e-3dcf-910c-896de6cb160b"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    servername: "ajax.microsoft.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "ajax.microsoft.com"
+  - name: "🇯🇵[www.v2nodes.com] trojan-JP-... #1_2"
+    type: "trojan"
+    server: "jp005.421421.xyz"
+    port: 20230
+    network: "ws"
+    password: "0400697c-b581-4575-9d2f-0bbd4659312d"
+    ws-opts:
+      path: "/"
+  - name: "ss-35.72.81.216"
+    type: "ss"
+    server: "35.72.81.216"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+  - name: "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡ғрџ‡ё_US_зңҺе›Ң"
+    type: "vless"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "399b6b23-cc40-4831-a494-61948e2df133"
+    tls: false
+    skip-cert-verify: true
+  - name: "未知 VMESS-1160 | free-nodes"
+    type: "vmess"
+    server: "cindy51.ceoiii.com"
+    port: 36802
+    uuid: "a6ab6513-6ec3-327f-a068-b89fe72954b8"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    servername: "ajax.microsoft.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "ajax.microsoft.com"
+  - name: "FR法國丨yoyapai.com_5"
+    type: "vless"
+    server: "cf.877774.xyz"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "🇭🇰 香港 | HKG_2"
+    type: "vless"
+    server: "103.148.73.173"
+    port: 8443
+    uuid: "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f"
+    network: "ws"
+    tls: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇯🇵[www.v2nodes.com] trojan-JP-... #1_3"
+    type: "trojan"
+    server: "jp005.421421.xyz"
+    port: 20230
+    network: "ws"
+    password: "0400697c-b581-4575-9d2f-0bbd4659312d"
+    ws-opts:
+      path: "/"
+  - name: "未知 VMESS-1301 | free-nodes"
+    type: "vmess"
+    server: "sylva51.ceoiii.com"
+    port: 36822
+    uuid: "4f198ea9-311e-3dcf-910c-896de6cb160b"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    servername: "ajax.microsoft.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "ajax.microsoft.com"
+  - name: "🇯🇵[www.v2nodes.com] trojan-JP-..._2"
+    type: "trojan"
+    server: "4c2d5151.266nets.com"
+    port: 12019
+    skip-cert-verify: true
+    password: "bad06c3525a6eaee1757b34776b83892"
+  - name: "FR法國丨yoyapai.com_2_2"
+    type: "vless"
+    server: "yx.cloudflare.182682.xyz"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "🇸🇪[www.v2nodes.com] vless-SE-1... #5"
+    type: "vless"
+    server: "cf.090227.xyz"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "lucasjow.us.ci"
+    ws-opts:
+      headers:
+        Host: "lucasjow.us.ci"
+      path: "/cart/docs/www/proxyip=108.160.132.132"
+  - name: "未知 TROJAN-313 | free-nodes"
+    type: "trojan"
+    server: "172.64.152.23"
+    port: 443
+    skip-cert-verify: true
+    password: "humanity"
+  - name: "🇭🇰 香港4|@ripaojiedian_3"
+    type: "vmess"
+    server: "aZW0eunYVdvRe73k.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "aZW0eunYVdvRe73k.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "aZW0eunYVdvRe73k.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇺🇸US美國丨yoyapai.com_6"
+    type: "vless"
+    server: "cf.090227.xyz"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "🇯🇵JP日本丨yoyapai.com_5"
+    type: "vless"
+    server: "us22.sofast.live"
+    port: 58011
+    uuid: "0afc6426-606c-48e7-bd70-3c424a416842"
+    tls: false
+    skip-cert-verify: false
+  - name: "未知 VMESS-1303 | free-nodes"
+    type: "vmess"
+    server: "sylva53.ceoiii.com"
+    port: 36824
+    uuid: "4f198ea9-311e-3dcf-910c-896de6cb160b"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    servername: "ajax.microsoft.com"
+    ws-opts:
+      path: "/hls/cctv5phd.m3u8"
+      headers:
+        Host: "ajax.microsoft.com"
+  - name: "🇭🇰 香港5|@ripaojiedian_2"
+    type: "vmess"
+    server: "syJ2gGUgMwBwQwQx.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "syJ2gGUgMwBwQwQx.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "syJ2gGUgMwBwQwQx.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇰🇷KR韩國丨yoyapai.com_2"
+    type: "vless"
+    server: "104.17.144.29"
+    port: 8880
+    uuid: "81d55675-8570-4b40-9a77-3125339a0f86"
+    network: "ws"
+    tls: false
+    skip-cert-verify: false
+    ws-opts:
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      headers:
+        Host: "spring-sound-8d8e.36-9ff.workers.dev"
+  - name: "🇨🇦 CA · Mississauga · Vless · 539ms | 317"
+    type: "vless"
+    server: "cf.090227.xyz"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    network: "ws"
+    tls: true
+    servername: "lucasjow.us.ci"
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+      headers:
+        Host: "lucasjow.us.ci"
+  - name: "🇯🇵[www.v2nodes.com] trojan-JP-... #1"
+    type: "trojan"
+    server: "jp005.421421.xyz"
+    port: 20230
+    skip-cert-verify: true
+    password: "0400697c-b581-4575-9d2f-0bbd4659312d"
+  - name: "🇯🇵[www.v2nodes.com] trojan-JP-..."
+    type: "trojan"
+    server: "4c2d5151.266nets.com"
+    port: 12019
+    skip-cert-verify: true
+    password: "bad06c3525a6eaee1757b34776b83892"
+  - name: "🇯🇵 日本 | JPN_2"
+    type: "vless"
+    server: "178.239.117.133"
+    port: 8443
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    network: "ws"
+    tls: true
+    servername: "snip.edgeoneai.cc.cd"
+    ws-opts:
+      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443"
+      headers:
+        Host: "snip.edgeoneai.cc.cd"
+  - name: "🇭🇰 香港 | HKG 3_2"
+    type: "vless"
+    server: "151.242.85.236"
+    port: 443
+    uuid: "7aec627e-a258-4ded-9fd9-fbd7c024f950"
+    network: "tcp"
+    tls: true
+    servername: "addons.mozilla.org"
+  - name: "🇯🇵[www.v2nodes.com] trojan-JP-..._3"
+    type: "trojan"
+    server: "4c2d5151.266nets.com"
+    port: 12019
+    skip-cert-verify: true
+    password: "bad06c3525a6eaee1757b34776b83892"
+  - name: "ProxyPool | 🇹🇼 🇨🇳 台湾 | TWN 2"
+    type: "vless"
+    server: "59.125.69.23"
+    port: 443
+    uuid: "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f"
+    network: "ws"
+    tls: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇯🇵[www.v2nodes.com] vless-JP-1... #12"
+    type: "vless"
+    server: "104.19.33.237"
+    port: 443
+    uuid: "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+    network: "ws"
+    tls: true
+    servername: "jp3.yohototo.top"
+    ws-opts:
+      headers:
+        Host: "jp3.yohototo.top"
+      path: "/tyxyws"
+  - name: "🇨🇦 CA · Mississauga · Vless · 580ms | 348"
+    type: "vless"
+    server: "cf.090227.xyz"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    network: "ws"
+    tls: true
+    servername: "lucasjow.us.ci"
+    ws-opts:
+      path: "/cart/docs/www/proxyip=108.160.132.132"
+      headers:
+        Host: "lucasjow.us.ci"
+  - name: "🇸🇬[www.v2nodes.com] vless-SG-1... #4"
+    type: "vless"
+    server: "cf.090227.xyz"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "lucasjow.us.ci"
+    ws-opts:
+      headers:
+        Host: "lucasjow.us.ci"
+      path: "/cart/docs/www/proxyip=108.160.132.132fp=qq"
+  - name: "US美国(v2clash.blog 2026-10.13更新)_23"
+    type: "vless"
+    server: "saas.sin.fan"
+    port: 443
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "snip.edgeoneai.cc.cd"
+    ws-opts:
+      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
+      headers:
+        Host: "snip.edgeoneai.cc.cd"
+  - name: "🇰🇷 韩国|@ripaojiedian_2"
+    type: "vmess"
+    server: "8nTzyR5KNivfabaT.v.3dns.vip"
+    port: 443
+    uuid: "88888888-8888-8888-8888-888888888888"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "8nTzyR5KNivfabaT.v.3dns.vip"
+    ws-opts:
+      headers:
+        Host: "8nTzyR5KNivfabaT.v.3dns.vip"
+      path: "/ws-vmess"
+  - name: "🇯🇵 日本|@ripaojiedian"
+    type: "vmess"
+    server: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+    port: 443
+    uuid: "f0b7bbd66aad458aaec0e9acaab768b6"
     alterId: 0
     cipher: "auto"
     network: "ws"
     tls: true
     skip-cert-verify: true
-    servername: "guanwang.awsno.com"
+    servername: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
     ws-opts:
-      path: "/hls/cctv5phd.m3u8"
+      path: "/ws-vmess"
       headers:
-        Host: "guanwang.awsno.com"
+        Host: "Z9FfBx3zs2q5O0BG.v.3dns.vip"
+  - name: "🇺🇸 美国 | USA #7"
+    type: "trojan"
+    server: "b2n.ir"
+    port: 443
+    skip-cert-verify: true
+    password: "mitivpn"
+  - name: "github.com/freefq - 美国CloudFlare公司CDN节点 9"
+    type: "vmess"
+    server: "104.21.82.183"
+    port: 8880
+    uuid: "5a7021e0-26b4-45d6-b175-fe551601ca97"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    servername: "server26.beheshtbaneh.com"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "server26.beheshtbaneh.com"
+  - name: "🇯🇵 日本3|@ripaojiedian"
+    type: "vmess"
+    server: "kneNaKHeSXnZH259.v.3dns.vip"
+    port: 443
+    uuid: "f0b7bbd66aad458aaec0e9acaab768b6"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "kneNaKHeSXnZH259.v.3dns.vip"
+    ws-opts:
+      path: "/ws-vmess"
+      headers:
+        Host: "kneNaKHeSXnZH259.v.3dns.vip"
+  - name: "US美国(v2clash.blog 2026-10.13更新)_5"
+    type: "vless"
+    server: "saas.sin.fan"
+    port: 443
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "snip.edgeoneai.cc.cd"
+    ws-opts:
+      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome"
+      headers:
+        Host: "snip.edgeoneai.cc.cd"
+  - name: "US美国(v2clash.blog 2026-10.13更新)_69"
+    type: "vless"
+    server: "saas.sin.fan"
+    port: 443
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    servername: "snip.edgeoneai.cc.cd"
+    ws-opts:
+      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
+      headers:
+        Host: "snip.edgeoneai.cc.cd"
+  - name: "🇨🇦加拿大丨yoyapai.com_2_2"
+    type: "vless"
+    server: "104.21.88.174"
+    port: 2052
+    uuid: "81e09a82-fe8d-4393-aefb-747322b20795"
+    network: "httpupgrade"
+    tls: false
+    skip-cert-verify: false
+  - name: "🇺🇸 US · Minneapolis · Vless · 102ms | 043"
+    type: "vless"
+    server: "cf.877774.xyz"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    network: "ws"
+    tls: true
+    servername: "lucasjow.us.ci"
+    ws-opts:
+      path: "/cart/docs/www/proxyip=108.160.132.132"
+      headers:
+        Host: "lucasjow.us.ci"
+  - name: "FR法國丨yoyapai.com_2"
+    type: "vless"
+    server: "cf.877774.xyz"
+    port: 443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    network: "ws"
+    tls: true
+    skip-cert-verify: false
+    servername: "t1s1.rittbo.kdns.fr"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "美國丨yoyapai.com_1_2"
+    type: "trojan"
+    server: "blackshadow.dpdns.org"
+    port: 443
+    skip-cert-verify: false
+    password: "2bcfbfba-b446-4ad5-93ad-72af9e008f61"
+    ws-opts:
+      path: "/195.123.218.174-443"
+      headers:
+        Host: "blackshadow.dpdns.org"
+  - name: "🇨🇦加拿大丨yoyapai.com_2"
+    type: "vless"
+    server: "104.21.88.174"
+    port: 2052
+    uuid: "81e09a82-fe8d-4393-aefb-747322b20795"
+    network: "httpupgrade"
+    tls: false
+    skip-cert-verify: false
 
 proxy-groups:
   - name: "PROXY"
     type: select
-    proxies: ["AUTO", "DIRECT", "🇭🇰_HK_中国香港->🇺🇸_US_美国", "🇯🇵 日本 | JPN 2", "🇺🇸_US_美国", "🇯🇵 日本 | JPN_2", "🇽🇽 XX · Vless · 718ms | 297", "🇯🇵JP-45.32.52.173-28", "🇫🇷 法国 | FRA", "🇳🇱 NL · Haarlem · Vless · 98ms | 037", "🇸🇬SG-139.180.146.200-31", "🇸🇬[www.v2nodes.com] trojan-SG-...", "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206", "🇯🇵JP_1|1.2MB/s", "🇭🇰_HK_中国香港->🇯🇵_JP_日本", "🇺🇸_US_美国_2_2"]
+    proxies: ["AUTO", "DIRECT", "🇭🇰 香港5|@ripaojiedian_3", "рџ‡Ёрџ‡і_CN_дё­е›Ң", "未知 VMESS-887 | free-nodes", "🇺🇸美國丨yoyapai.com_3", "❓未知丨yoyapai.com_61", "❓未知丨yoyapai.com_60", "❓未知丨yoyapai.com_14_2", "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡®рџ‡Ғ_IE_з€±е°”е…°", "🇯🇵JP日本丨yoyapai.com_2_2", "❓未知丨yoyapai.com_54", "🇨🇦加拿大丨yoyapai.com_1_2", "🇺🇸US美國丨yoyapai.com_8_2", "美國節點丨yoyapai.com_2", "🇹🇭TH泰國丨yoyapai.com_2", "❓未知丨yoyapai.com_53", "❓未知丨yoyapai.com_30", "🇨🇦加拿大丨yoyapai.com_1", "🇳🇱NL_1|3.8MB/s", "RELAY-104.17.147.222-0201 | 0.0MB", "🇹🇭TH泰國丨yoyapai.com_1_2", "🇺🇸 US · Minneapolis · Vless · 73ms | 013", "🇹🇭TH泰國丨yoyapai.com_1", "🇺🇸美國丨yoyapai.com", "🇺🇸US美国丨yoyapai.com_13", "US美国(v2clash.blog 2026-10.13更新)_67", "🇹🇭TH泰国", "FR法國丨yoyapai.com_6", "🇺🇸US_2|3.5MB/s", "🇺🇸US-103.224.182.210-0205 | 0.0MB", "FR法國丨yoyapai.com"]
   - name: "AUTO"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 80
     lazy: false
-    proxies: ["🇯🇵 日本 | JPN 2", "🇺🇸_US_美国", "🇯🇵 日本 | JPN_2", "🇽🇽 XX · Vless · 718ms | 297", "🇯🇵JP-45.32.52.173-28", "🇫🇷 法国 | FRA", "🇳🇱 NL · Haarlem · Vless · 98ms | 037", "🇭🇰_HK_中国香港->🇺🇸_US_美国", "🇸🇬SG-139.180.146.200-31", "🇸🇬[www.v2nodes.com] trojan-SG-...", "🇩🇪 DE · Frankfurt am Main · Vmess · 435ms | 206", "🇯🇵JP_1|1.2MB/s", "🇭🇰_HK_中国香港->🇯🇵_JP_日本", "🇺🇸_US_美国_2_2"]
+    proxies: ["рџ‡Ёрџ‡і_CN_дё­е›Ң", "未知 VMESS-887 | free-nodes", "🇺🇸美國丨yoyapai.com_3", "❓未知丨yoyapai.com_61", "❓未知丨yoyapai.com_60", "❓未知丨yoyapai.com_14_2", "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡®рџ‡Ғ_IE_з€±е°”е…°", "🇯🇵JP日本丨yoyapai.com_2_2", "❓未知丨yoyapai.com_54", "🇨🇦加拿大丨yoyapai.com_1_2", "🇺🇸US美國丨yoyapai.com_8_2", "美國節點丨yoyapai.com_2", "🇹🇭TH泰國丨yoyapai.com_2", "❓未知丨yoyapai.com_53", "❓未知丨yoyapai.com_30", "🇨🇦加拿大丨yoyapai.com_1", "🇳🇱NL_1|3.8MB/s", "RELAY-104.17.147.222-0201 | 0.0MB", "🇹🇭TH泰國丨yoyapai.com_1_2", "🇺🇸 US · Minneapolis · Vless · 73ms | 013", "🇹🇭TH泰國丨yoyapai.com_1", "🇭🇰 香港5|@ripaojiedian_3", "🇺🇸美國丨yoyapai.com", "🇺🇸US美国丨yoyapai.com_13", "US美国(v2clash.blog 2026-10.13更新)_67", "🇹🇭TH泰国", "FR法國丨yoyapai.com_6", "🇺🇸US_2|3.5MB/s", "🇺🇸US-103.224.182.210-0205 | 0.0MB", "FR法國丨yoyapai.com", "❓未知丨yoyapai.com_28", "❓未知丨yoyapai.com_29", "🇭🇰 香港2|@ripaojiedian_2", "🇹🇭TH泰國丨yoyapai.com", "🇯🇵 日本3|@ripaojiedian_2", "FR法國丨yoyapai.com_3", "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡«рџ‡·_FR_жі•е›Ң", "🇭🇰 香港4|@ripaojiedian_2", "❓未知丨yoyapai.com_27", "🇨🇦加拿大丨yoyapai.com_3_2", "🇭🇰 HK · Hong Kong · Vmess · 360ms | 203", "🇰🇷KR韩國丨yoyapai.com", "🇯🇵 日本2|@ripaojiedian_2", "🇯🇵 日本|@ripaojiedian_2", "🇭🇰 香港2|@ripaojiedian_3", "🇯🇵 日本|@ripaojiedian_3", "🇭🇰 香港 | HKG #3", "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡ірџ‡±_NL_иҚ·е…°", "🇯🇵 日本3|@ripaojiedian_3", "❓未知丨yoyapai.com_34", "🇹🇭TH泰国丨yoyapai.com_1_2", "🇯🇵 日本 | JPN 2_2", "🇸🇬SG新加坡丨yoyapai.com_4", "🇯🇵 日本2|@ripaojiedian_3", "未知 VMESS-1304 | free-nodes", "❓未知丨yoyapai.com_38", "美國節點丨yoyapai.com", "🇭🇰[www.v2nodes.com] trojan-HK-..._3", "未知 VMESS-1302 | free-nodes", "🇯🇵[www.v2nodes.com] trojan-JP-... #1_2", "ss-35.72.81.216", "рџ‡Ёрџ‡і_CN_дё­е›Ң->рџ‡ғрџ‡ё_US_зңҺе›Ң", "未知 VMESS-1160 | free-nodes", "FR法國丨yoyapai.com_5", "🇭🇰 香港 | HKG_2", "🇯🇵[www.v2nodes.com] trojan-JP-... #1_3", "未知 VMESS-1301 | free-nodes", "🇯🇵[www.v2nodes.com] trojan-JP-..._2", "FR法國丨yoyapai.com_2_2", "🇸🇪[www.v2nodes.com] vless-SE-1... #5", "未知 TROJAN-313 | free-nodes", "🇭🇰 香港4|@ripaojiedian_3", "🇺🇸US美國丨yoyapai.com_6", "🇯🇵JP日本丨yoyapai.com_5", "未知 VMESS-1303 | free-nodes", "🇭🇰 香港5|@ripaojiedian_2", "🇰🇷KR韩國丨yoyapai.com_2", "🇨🇦 CA · Mississauga · Vless · 539ms | 317", "🇯🇵[www.v2nodes.com] trojan-JP-... #1", "🇯🇵[www.v2nodes.com] trojan-JP-...", "🇯🇵 日本 | JPN_2", "🇭🇰 香港 | HKG 3_2", "🇯🇵[www.v2nodes.com] trojan-JP-..._3", "ProxyPool | 🇹🇼 🇨🇳 台湾 | TWN 2", "🇯🇵[www.v2nodes.com] vless-JP-1... #12", "🇨🇦 CA · Mississauga · Vless · 580ms | 348", "🇸🇬[www.v2nodes.com] vless-SG-1... #4", "US美国(v2clash.blog 2026-10.13更新)_23", "🇰🇷 韩国|@ripaojiedian_2", "🇯🇵 日本|@ripaojiedian", "🇺🇸 美国 | USA #7", "github.com/freefq - 美国CloudFlare公司CDN节点 9", "🇯🇵 日本3|@ripaojiedian", "US美国(v2clash.blog 2026-10.13更新)_5", "US美国(v2clash.blog 2026-10.13更新)_69", "🇨🇦加拿大丨yoyapai.com_2_2", "🇺🇸 US · Minneapolis · Vless · 102ms | 043", "FR法國丨yoyapai.com_2", "美國丨yoyapai.com_1_2", "🇨🇦加拿大丨yoyapai.com_2"]
 
 rules:
   - "DOMAIN-SUFFIX,baidu.com,DIRECT"

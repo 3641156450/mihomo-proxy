@@ -599,7 +599,8 @@ def real_proxy_test(candidates):
             'secret: "%s"' % TEMP_SECRET, "allow-lan: false"]
     tmp = os.path.join(BASE, "_tmp_realtime.yaml")
     err_log = os.path.join(BASE, "_mihomo_realtest_err.log")
-    home = tempfile.mkdtemp(prefix="mihomo_rt_")
+    # 临时内核运行目录建在项目目录内（已在 Defender 排除列表），避免往系统 %TEMP% 写文件被安全中心拦截
+    home = tempfile.mkdtemp(prefix="mihomo_rt_", dir=BASE)
     open(tmp, "w", encoding="utf-8").write("\n".join(cfg) + "\n")
     proc = None
     try:
